@@ -1,5 +1,3 @@
-import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import se.jiderhamn.classloader.leak.JUnitClassloaderRunner;
@@ -14,9 +12,6 @@ public class NormalizeDom {
   @Test
   @Leaks(dumpHeapOnError = true)
   public void normalizeDom() throws Exception {
-    DocumentBuilderFactory.newInstance()
-        .newDocumentBuilder()
-        .newDocument()
-        .normalizeDocument();
+
   }
 }
