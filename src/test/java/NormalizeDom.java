@@ -1,7 +1,6 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import se.jiderhamn.classloader.leak.JUnitClassloaderRunner;
-import se.jiderhamn.classloader.leak.Leaks;
 
 /** 
  * {@link com.sun.org.apache.xerces.internal.dom.DOMNormalizer#abort}
@@ -10,7 +9,6 @@ import se.jiderhamn.classloader.leak.Leaks;
 public class NormalizeDom {
   
   @Test
-  @Leaks(dumpHeapOnError = true)
   public void normalizeDom() throws Exception {
 
   }
