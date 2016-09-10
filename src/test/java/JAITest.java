@@ -1,11 +1,15 @@
 import java.io.ByteArrayInputStream;
 
+import com.sun.media.jai.codec.FileCacheSeekableStream;
 import com.sun.media.jai.codec.SeekableStream;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import se.jiderhamn.classloader.leak.JUnitClassloaderRunner;
 import se.jiderhamn.classloader.leak.Leaks;
 
+/** 
+ * {@link FileCacheSeekableStream#cleanupThread} 
+ */
 @RunWith(JUnitClassloaderRunner.class)
 public class JAITest {
   
